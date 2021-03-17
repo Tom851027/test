@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<title>Mobile Bank</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div id = blockL></div>
+		<div class = "container">
+			
+			<div class = "loginRec">
+				<div id = "switchbarL"></div>
+				<div id = "switchbarR"></div>
+				<div id = "idLogin" >
+					<div id ="idLoginlabel">帳號登入</div>
+				</div>
+				<div id ="bioLogin">
+					<div id ="bioLoginlabel">快速登入</div>
+				</div>
+				
+			</div>
+			<div id = biointerface>
+				<div id = bioLabel>生物辨識登入A12345****</div>
+				<div id = Wcircle>
+					<div id = bioimg></div>
+				</div>
+				<div id = startButton>
+					<div id = "startButtonString">開始辨識</div>
+				</div>
+				<div id = graphicLabel>圖形密碼登入A12345****</div>
+				<div id = Wreg>
+					<div id = "dot1"></div>
+					<div id = "dot2"></div>
+					<div id = "dot3"></div>
+					<div id = "dot4"></div>
+					<div id = "dot5"></div>
+					<div id = "dot6"></div>
+					<div id = "dot7"></div>
+					<div id = "dot8"></div>
+					<div id = "dot9"></div>
+				</div>
+
+				<div id = hideLayout>
+					<div id = "hideString">隱藏圖形軌跡</div>
+					<input type="checkbox" id="switch" /><label for="switch"></label>
+				</div>
+			</div>
+
+			<div id = "IDinterface">
+
+				<div id = "IDinput">
+					<div id = "IDinputLabel">身分證字號</div>
+					<input id = IDtextbox maxlength = "10" onkeyup="value=value.replace(/[\W]/g,'') "
+
+		onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+
+		onkeydown="if(event.keyCode==13)event.keyCode=9">
+				</div>
+				<div id = "Accountinput">
+					<div id = "AccountinputLabel">使用者代碼</div>
+					<input id = Accounttextbox maxlength = "20" onkeyup="value=value.replace(/[\W]/g,'') "
+
+		onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+
+		onkeydown="if(event.keyCode==13)event.keyCode=9">
+				</div>
+				<div id = "Passwordinput">
+					<div id = "PasswordinputLabel">網路密碼</div>
+					<input id = Passwordtextbox maxlength = "20" type="password" onkeyup="value=value.replace(/[\W]/g,'') "
+
+		onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+
+		onkeydown="if(event.keyCode==13)event.keyCode=9">
+
+				</div>
+
+				<div id ="verifyLayout">
+					<div id= "verifyCodeLayout">
+						
+						<input id = "verifyInput" placeholder="驗證碼" onkeyup="value=value.replace(/[^\d]/g,'') "
+
+		onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+					</div>
+					<div id= "OTPCodeLayout">
+						<div id = "mark"></div>
+						<div id = "OTPCodeLabel1">1</div>
+						<div id = "OTPCodeLabel2">2</div>
+						<div id = "OTPCodeLabel3">3</div>
+						<div id = "OTPCodeLabel4">4</div>
+						<div id = "OTPCodeLabel5">5</div>
+						<div id = "OTPCodeLabel6">6</div>
+						<div id = "OTPrefreshimg"></div>
+					</div>
+				</div>
+				<div id="checkboxBefore"></div>
+				<input id="checkbox" type="checkbox">
+				<div id = "checkboxLabel">記住身分證字號</div>
+				
+				
+
+				<div id = "Loginbutton">
+					<div id = "LoginLabel">登入</div>
+				</div>
+
+				<div id = forgetPasswordLayout>
+					<a id = "forgetPassword" href="https://mma.sinopac.com/MemberPortal/Member/ApplyMmaIndex.aspx">申請網銀/密碼重置</a>
+				</div>
+
+				<div class = "LeftgreyLine"></div>
+				<div id = "orLabel">或</div>
+				<div class = "RightgreyLine"></div>
+
+				<div id = "noAccountbutton">
+					<div id = "noAccountLabel">還沒有帳戶</div>
+				</div>
+
+			</div>
+		</div>
+		<div id = "blockR"></div>
+	</div>
+
+
+	<p id = p>demo</p>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>
